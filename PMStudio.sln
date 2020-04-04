@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMStudio.MVC", "PMStudio.MVC\PMStudio.MVC.csproj", "{0BAC98E2-369D-4B66-A6E4-0617214C2384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMStudio.MVC.Tests", "PMStudio.MVC.Tests\PMStudio.MVC.Tests.csproj", "{500AEC7E-DD94-4C3C-A684-CC1648AE3F32}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2664E651-CC51-49C8-A34C-C931880098B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMStudio.Web", "PMStudio.Web\PMStudio.Web.csproj", "{9202F7B6-4BE1-452E-978D-6794FD3EBCFB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://cleberfasilva.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PMStudio.MVC\\PMStudio.MVC.csproj
+		SccProjectName1 = PMStudio.MVC
+		SccLocalPath1 = PMStudio.MVC
+		SccProjectUniqueName2 = PMStudio.MVC.Tests\\PMStudio.MVC.Tests.csproj
+		SccProjectTopLevelParentUniqueName2 = PMStudio.sln
+		SccProjectName2 = PMStudio.MVC.Tests
+		SccLocalPath2 = PMStudio.MVC.Tests
+		SccProjectUniqueName3 = PMStudio.Web\\PMStudio.Web.csproj
+		SccProjectName3 = PMStudio.Web
+		SccLocalPath3 = PMStudio.Web
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BAC98E2-369D-4B66-A6E4-0617214C2384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BAC98E2-369D-4B66-A6E4-0617214C2384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BAC98E2-369D-4B66-A6E4-0617214C2384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BAC98E2-369D-4B66-A6E4-0617214C2384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{500AEC7E-DD94-4C3C-A684-CC1648AE3F32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{500AEC7E-DD94-4C3C-A684-CC1648AE3F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{500AEC7E-DD94-4C3C-A684-CC1648AE3F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{500AEC7E-DD94-4C3C-A684-CC1648AE3F32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9202F7B6-4BE1-452E-978D-6794FD3EBCFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9202F7B6-4BE1-452E-978D-6794FD3EBCFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9202F7B6-4BE1-452E-978D-6794FD3EBCFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9202F7B6-4BE1-452E-978D-6794FD3EBCFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{500AEC7E-DD94-4C3C-A684-CC1648AE3F32} = {2664E651-CC51-49C8-A34C-C931880098B4}
+	EndGlobalSection
+EndGlobal

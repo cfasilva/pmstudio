@@ -1,0 +1,162 @@
+﻿@model PMStudio.MVC.Models.Projeto
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Projeto</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IdTipoProjeto, "IdTipoProjeto", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("IdTipoProjeto", String.Empty)
+                @Html.ValidationMessageFor(model => model.IdTipoProjeto)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IdCliente, "IdCliente", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("IdCliente", String.Empty)
+                @Html.ValidationMessageFor(model => model.IdCliente)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Identificador, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Identificador)
+                @Html.ValidationMessageFor(model => model.Identificador)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Nome, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nome)
+                @Html.ValidationMessageFor(model => model.Nome)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Justificativa, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Justificativa)
+                @Html.ValidationMessageFor(model => model.Justificativa)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Objetivo, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Objetivo)
+                @Html.ValidationMessageFor(model => model.Objetivo)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Prazo, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Prazo)
+                @Html.ValidationMessageFor(model => model.Prazo)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Custo, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Custo)
+                @Html.ValidationMessageFor(model => model.Custo)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Descricao, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Descricao)
+                @Html.ValidationMessageFor(model => model.Descricao)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Meta, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Meta)
+                @Html.ValidationMessageFor(model => model.Meta)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DtCadastro, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DtCadastro)
+                @Html.ValidationMessageFor(model => model.DtCadastro)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DtAtualizacao, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DtAtualizacao)
+                @Html.ValidationMessageFor(model => model.DtAtualizacao)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DtInicio, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DtInicio)
+                @Html.ValidationMessageFor(model => model.DtInicio)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DtFim, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DtFim)
+                @Html.ValidationMessageFor(model => model.DtFim)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Login, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Login)
+                @Html.ValidationMessageFor(model => model.Login)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Situacao, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Situacao)
+                @Html.ValidationMessageFor(model => model.Situacao)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

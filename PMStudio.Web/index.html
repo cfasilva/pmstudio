@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PMStudio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        body { background-color: #eee; }
+
+        .vert-text { color: #ffffff }
+
+        .form-signin {
+            max-width: 330px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+
+            .form-signin .form-signin-heading,
+            .form-signin .checkbox {
+                margin-bottom: 10px;
+            }
+
+            .form-signin .checkbox {
+                font-weight: normal;
+            }
+
+            .form-signin .form-control {
+                position: relative;
+                font-size: 16px;
+                height: auto;
+                padding: 10px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+                .form-signin .form-control:focus {
+                    z-index: 2;
+                }
+
+            .form-signin input[type="text"] {
+                margin-bottom: -1px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            .form-signin input[type="password"] {
+                margin-bottom: 10px;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+    </style>
+</head>
+<body>
+    <!-- Side Menu -->
+    <!--<a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand"><a href="http://startbootstrap.com">Start Bootstrap</a></li>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>-->
+    <!-- /Side Menu -->
+
+    <!-- Image Header Area -->
+    <div id="top" class="header">
+        <div class="vert-text">
+            <h1>PMStudio</h1>
+            <h3>O melhor sistema de gestão de projetos online</h3>
+            <a href="#about" class="btn btn-default btn-lg">Login</a>
+        </div>
+    </div>
+    <!-- /Image Header Area -->
+
+    <!-- Login -->
+    <div id="about" class="intro">
+        <div class="container">
+            <form class="form-signin">
+                <input type="text" class="form-control" placeholder="Email" required autofocus>
+                <input type="password" class="form-control" placeholder="Senha" required>
+                <label class="checkbox"><input type="checkbox" value="remember-me"> Manter logado</label>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <!-- /Login -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <ul class="list-inline">
+                        <li><i class="fa fa-facebook fa-3x"></i></li>
+                        <li><i class="fa fa-twitter fa-3x"></i></li>
+                    </ul>
+                    <div class="top-scroll">
+                        <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
+                    </div>
+                    <hr>
+                    <p><a href="#">Não tem uma conta? Crie agora!</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    <script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+</body>
+</html>
